@@ -1,0 +1,114 @@
+   CUSTOMER DATA  ANALYSIS — PROJECT DOCUMENTATION
+
+Project Title: Customer Data Analysis
+Tools Used      : Microsoft SQL Server (T-SQL), Microsoft Excel
+Data Source     : Manually curated / structured dataset (53 records)
+Total Records: 53 Customers
+Duration          : 1 month
+
+
+1. PROJECT OVERVIEW
+
+Developed a Customer Behaviour Analysis project to analyze purchase patterns,
+revenue contribution, and customer segmentation across four major Indian cities
+— Mumbai, Bangalore, Hyderabad, and Chennai. The project enables stakeholders
+to monitor key metrics, identify high-value customers, and make data-driven
+business decisions.
+
+2. PROJECT OBJECTIVE
+
+  - Analyze customer purchase behaviour across multiple dimensions
+  - Track revenue, order count, and average spending metrics
+  - Segment customers based on purchase value and loyalty
+  - Identify top-performing cities, age groups, and gender segments
+  - Monitor repeat vs new customer patterns
+  - Support strategic business decisions through structured SQL analysis
+    and Excel dashboards
+
+3. DATABASE SCHEMA
+
+Database Name : data_analysis
+
+  Column Name       Data Type         Description
+  -----------       ---------         -----------
+  Customer_ID       INT (PK)          Unique identifier for each customer
+  Name              VARCHAR(50)       Customer full name
+  Age               INT               Age of the customer
+  Gender            VARCHAR(10)       Male / Female
+  City              VARCHAR(50)       City of residence
+  Purchase_Amount   DECIMAL(10,2)     Total amount spent (in INR)
+  Order_Count       INT               Total number of orders placed
+
+4. DATA PREPARATION
+
+  - Checked for NULL values across all critical columns
+  - Identified and removed duplicate Customer_IDs using CTE + ROW_NUMBER()
+  - Validated data formats and ensured consistency across records
+  - Prepared and structured the dataset for analysis and reporting
+
+5. SQL ANALYSIS — SECTIONS
+
+  Section 1  : Data Cleaning         — NULL checks & duplicate removal
+  Section 2  : Customer Segmentation — High / Medium / Low Value by spend
+  Section 3  : Top 10 Customers      — Ranked by Purchase Amount
+  Section 4  : City-wise Analysis    — Revenue, customer count & avg spend
+  Section 5  : Repeat vs New         — Classified by Order Count
+  Section 6  : Average Order Value   — Purchase Amount / Order Count (AOV)
+  Section 7  : Gender Analysis       — Revenue & spending by gender
+  Section 8  : Top Repeat Customers  — Ranked by Order Count
+  Section 9  : Engagement Score      — Purchase Amount × Order Count
+
+6. EXCEL DASHBOARD
+
+KPI Cards
+  - Total Revenue: INR 1,11,900
+  - Total Customers: 53
+  - Average Purchase: INR 2,111.54
+  - Average Orders: 4.62
+
+Dashboard Sheets
+  - Dashboard       : Visual KPI cards, charts, and key insights
+  - Raw Data        : 53 customer records with all attributes
+  - Segment Data    : Segmentation breakdown by customer type
+  - City Analysis   : City-level revenue and customer performance
+
+Analytical Visuals
+  - Revenue by City (Bar Chart)
+  - Revenue by Gender (Bar Chart)
+  - Customer Segments (Donut / Summary Table)
+  - Revenue by Age Group (Bar Chart)
+  - Top Customers by Purchase Amount (Table)
+  - Repeat vs New Customers (Summary)
+
+7. KEY INSIGHTS DELIVERED
+
+  - Identified Mumbai as the top-performing city with INR 32,100 in revenue
+  - Highlighted that male customers spend 27% more on average than females
+  - Revealed that Loyal + High Loyalty customers make up 49% of the base
+  - Identified the 26–35 age group as the highest revenue-generating segment
+  - Found that New customers have the highest avg order count (6.33)
+  - Evaluated engagement scores to surface disproportionately valuable customers
+
+8. BUSINESS IMPACT
+
+  - Improved visibility into customer purchase patterns and city performance
+  - Enabled faster identification of high-value and at-risk customer segments
+  - Helped prioritize marketing efforts toward top cities and age groups
+  - Supported strategic planning through actionable, data-backed insights
+
+9. PROJECT FILE STRUCTURE
+
+  File Name                              Description
+  ---------                              -----------
+  customer_data_analysis.sql        All SQL queries (9 sections)
+  CUSTOMER_DATA_ANALYSIS.xlsx        Excel workbook with dashboard,raw data, segment & city analysis
+
+10. FINAL OUTCOME
+
+Successfully designed and executed a comprehensive Customer Behaviour Analysis
+using SQL Server and Microsoft Excel. The project delivers structured insights
+into revenue performance, customer segmentation, and behavioural patterns across
+cities, genders, and age groups — empowering stakeholders to make informed,
+data-driven decisions and identify key growth opportunities.
+
+                          END OF DOCUMENTATION
